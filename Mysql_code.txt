@@ -1,0 +1,11 @@
+create schema Proj;
+use proj;
+create table books(
+id int not null auto_increment,
+title varchar(45) not null,
+des varchar(225) not null,
+cover varchar(45),
+primary key(id));
+insert into books(
+id,title,des,cover) values (
+1,'test title','des','cover.png');
